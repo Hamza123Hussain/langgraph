@@ -76,7 +76,7 @@ app = graph.compile()
 
 # Step 12: Run the graph with initial input
 # Here we tell it to do subtraction: 10 - 5
-result = app.invoke({"number1": 10, "operation": "-", "number2": 5})
+result = app.invoke({"number1": 30, "operation": "+", "number2": 5})
 
 # Step 13: Output the result
 print(result)  # Output: {'number1': 10, 'operation': '-', 'number2': 5, 'finalNumber': 5}
