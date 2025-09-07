@@ -30,7 +30,7 @@ reflection_prompt = ChatPromptTemplate.from_messages(
     ]
 )
 # Get Google API key from environment
-google_api_key = os.getenv("GOOGLE_API_KEY")
+google_api_key = os.getenv("googleapi")
 llm = ChatGoogleGenerativeAI(
     model='gemini-1.5-flash',
     google_api_key=google_api_key
